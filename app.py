@@ -86,7 +86,6 @@ def edit(id):
     return render_template('edit.html', form=form)
 
 
-
 @app.route('/delete/<int:id>', methods=['GET', 'POST'])
 def delete(id):
     persona = Persona.query.get_or_404(id)
